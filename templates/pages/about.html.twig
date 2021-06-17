@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}About us |
+	{{ parent()}}
+{% endblock %}
+
+{% block body %}
+
+	<p class="first"><img src="{{asset('/images/femme.jpg')}}" alt="Femme" class="drapeau"></p>
+	<p>Build with
+		<span class="heart">&hearts;</span>
+		by Raïssa TCHIBOZO</p>
+	<p>
+		<a href="{{ path('app_home')}}">Retour à la page d'accueil</a>
+	</p>
+{% endblock %}
